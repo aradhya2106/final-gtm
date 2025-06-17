@@ -1,0 +1,50 @@
+.custom-button {
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    // border-radius: 999px;
+    background-color: white; // Figma blue
+    color:black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: darken(#4a90e2, 10%);
+    //   transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    &.active {
+      transform: scale(0.95);
+      background-color: darken(#4a90e2, 15%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) inset;
+    }
+  
+    // Optional: handle additional variants using className props
+    &.secondary {
+      background-color: #f0f0f0;
+      color: #333;
+  
+      &:hover {
+        background-color: #e0e0e0;
+      }
+  
+      &.active {
+        background-color: #d0d0d0;
+      }
+    }
+  
+    &.danger {
+      background-color: #e74c3c;
+  
+      &:hover {
+        background-color: darken(#e74c3c, 10%);
+      }
+  
+      &.active {
+        background-color: darken(#e74c3c, 15%);
+      }
+    }
+  }
+  

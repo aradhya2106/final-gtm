@@ -1,13 +1,16 @@
 .topbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.868); 
     backdrop-filter: blur(8px);
     color: white;
     z-index: 1000;
     padding: 16px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: top;
   }
   
   .topbar-container {
@@ -16,7 +19,7 @@
     padding: 0 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
   }
   
   .logo {
@@ -42,5 +45,11 @@
   
   .nav-links a:hover {
     color: #a855f7; /* hover purple */
+  }
+  .opbar-buttons{
+    width: 110px;
+    height: 37px;
+    left: 0.3px;
+
   }
   

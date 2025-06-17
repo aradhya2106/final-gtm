@@ -1,0 +1,114 @@
+.hero-banner-container {
+    display: flex;;
+    align-items: center;
+    padding: 80px 60px;
+    background: linear-gradient(135deg, #eef2f3, #8e9eab);
+    height: 100vh;
+    box-sizing: border-box;
+    
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  }
+  
+  .hero-banner {
+    flex: 1;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+  
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 600px;
+  
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+  }
+  
+  .hero-text {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .hero-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 16PX;
+  }
+  .learn-button{
+    background-color: #222;
+    color: #fff;
+  }
+  .learn_text{
+    color: white;
+
+  }
+  
+  .hero-button {
+    width: fit-content;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken(#007bff, 10%);
+    }
+  }
+  
+  // Right section placeholder for animation
+  .hero-banner-container > div:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    div {
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle at 30% 30%, #4a90e2, #2d6cdf);
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+      animation: morphGlow 6s ease-in-out infinite;
+    }
+  }
+  
+  // Enhanced morphing + glow effect
+  @keyframes morphGlow {
+    0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      transform: rotate(0deg) scale(1);
+      box-shadow: 0 0 20px rgba(74, 144, 226, 0.4);
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 40% 70%;
+      transform: rotate(180deg) scale(1.05);
+      box-shadow: 0 0 40px rgba(74, 144, 226, 0.7);
+    }
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      transform: rotate(360deg) scale(1);
+      box-shadow: 0 0 20px rgba(74, 144, 226, 0.4);
+    }
+
+  }
+  
