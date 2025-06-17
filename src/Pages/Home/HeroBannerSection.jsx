@@ -33,7 +33,7 @@ export const HeroBanner = () => {
         </div>
       </div>
       <div>
-        <div>animation</div>
+        {/* <div>animation</div> */}
       </div>
     </div>
   );

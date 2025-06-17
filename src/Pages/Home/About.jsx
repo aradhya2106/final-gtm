@@ -1,3 +1,4 @@
+import { Container } from "../../Components/Continer/Continer";
 import { Typography } from "../../Components/Typography/Typography";
 import "./About.scss"; // Assuming you have a CSS file for styling
 
@@ -13,7 +14,7 @@ export const About = () => {
         solutions.
       </div>
       <div className="about-list">
-        <div>1</div>
+        <div> <Container></Container>1</div>
         <div>2</div>
         <div>3</div>
       </div>
