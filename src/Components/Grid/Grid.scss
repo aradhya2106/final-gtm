@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  // Mobile first
+  @for $i from 1 through 12 {
+    .col-mobile-#{$i} {
+      grid-column: span $i;
+    }
+  }
+  
+  // Tablet ≥ 600px
+  @media (min-width: 600px) {
+    @for $i from 1 through 12 {
+      .col-tab-#{$i} {
+        grid-column: span $i;
+      }
+    }
+  }
+  
+  // Laptop/Desktop ≥ 1024px
+  @media (min-width: 1024px) {
+    @for $i from 1 through 12 {
+      .col-laptop-#{$i} {
+        grid-column: span $i;
+      }
+    }
+  }
+  

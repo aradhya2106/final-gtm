@@ -1,0 +1,53 @@
+.ourteam-container
+{
+    background-color:black;
+    padding: 80px;
+}
+.Our_team_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.Text_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 21px;;
+}
+.Team_member_container{
+ 
+    color: white;
+}
+.second_text_contaier{
+    color: white;
+}
+.linkedin_container{
+
+}
+.Team_container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 86px;
+    margin-right: 170px;
+    margin-top: 51px;
+   
+}
+.x_container{
+    margin-left:12px;
+}
+.Team_member_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.image_conainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

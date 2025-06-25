@@ -2,6 +2,7 @@ import React from "react";
 import "./HeroBanner.scss";
 import { Typography } from "../../Components/Typography/Typography"; // Your reusable typography component
 import { Button } from "../../Components/Button/Button"; // Your reusable button
+import  hrobaner from "../../Assets/office.png"; // Import your hero banner image
 
 export const HeroBanner = () => {
   return (
@@ -25,16 +26,18 @@ export const HeroBanner = () => {
             </div>
             <div>
               <Button
-                text={<Typography className="learn_text" variant="h3">Learn More</Typography>}
+                text={
+                  <Typography className="learn_text" variant="h3">
+                    Learn More
+                  </Typography>
+                }
                 className="learn-button"
               />
             </div>
           </div>
-        </div>
+        </div> 
       </div>
-      <div>
-        {/* <div>animation</div> */}
-      </div>
+      <div><img className="image_container" src={hrobaner} alt="" /></div>
     </div>
   );
 };

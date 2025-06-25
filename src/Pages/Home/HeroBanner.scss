@@ -1,9 +1,10 @@
 .hero-banner-container {
     display: flex;;
     align-items: center;
-    padding: 80px 60px;
+    padding: 65px 45px;
     background: #000000;
     box-sizing: border-box;
+    padding-right: 0;
     
   
     @media (max-width: 768px) {
@@ -73,6 +74,7 @@
       background-color: darken(#007bff, 10%);
     }
   }
+
   
   // Right section placeholder for animation
   .hero-banner-container > div:last-child {
@@ -81,14 +83,16 @@
     justify-content: center;
     align-items: center;
   
-    div {
-      width: 180px;
-      height: 180px;
-      background: radial-gradient(circle at 30% 30%, #4a90e2, #2d6cdf);
-      border-radius: 50%;
-      box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
-      animation: morphGlow 6s ease-in-out infinite;
-    }
+  }
+  .image_container{
+    display: flex;
+    justify-content: center;
+    width : 400px;
+    height:300px;
+    left: 637px;
+    border-top-left-radius: 200px;
+  
+
   }
   
   // Enhanced morphing + glow effect
