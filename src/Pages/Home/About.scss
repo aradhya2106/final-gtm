@@ -58,6 +58,96 @@
   max-width: 700px;
 }
 
+//new//
+body {
+  background: #000;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  color: #fff;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; // vertical gap between stacked cards
+}
+
+.card {
+  position: relative;
+  background: #0d0d0d;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(#0d0d0d, #0d0d0d),
+    linear-gradient(90deg, #30A0FF, #B145FF);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+  width: 360px;
+
+  &:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 8px #b145ff);
+  }
+
+  h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
+/* Card Sizes */
+.card-1,
+.card-4 {
+  height: 200px;
+  width: 400px;
+}
+
+.card-2,
+.card-3 {
+  height: 460px;
+  width: 400px;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+
 /* ============== Responsive Media Queries ============== */
 
 /* Tablet */
