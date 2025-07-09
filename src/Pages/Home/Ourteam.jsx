@@ -1,78 +1,91 @@
-import React from 'react';
-import './Ourteam.scss';
-import { Typography } from '../../Components/Typography/Typography';
-import Linkedin from '../../Assets/Linkedin.png'
-import x from '../../Assets/x.png'
+import React from "react";
+import "./Ourteam.scss";
+import { Typography } from "../../Components/Typography/Typography";
+import { Container } from  "../../Components/Continer/Continer";
+import { Button } from "../../Components/Button/Button";
+
 export const Ourteam = () => {
-    return (
-      <div className="ourteam-container">
-        <div>
-          <div>
-            <Typography className="Our_team_container" variant="h2">
-              Our Team
+  return (
+    <div className="container_smartsolution">
+      <div className="smartsolution_container">
+        <Typography variant="h9" className="Structure_text">
+          Smart Solutions, Trusted Team
+        </Typography>
+        <Typography variant="h9" className="smartsolution_subtitle_text ">
+          Built to Grow Your Business
+        </Typography>
+        <Typography variant="h10" className="smartsolution_description_text">
+          Unlike generic AI tools, our solutions are custom-built to fit your
+          workflows seamlessly integrating <br /> with your current systems
+          without disrupting operations. Whether it’s automation, smarter
+          customer <br />
+          engagement, or enterprise-grade security, we deliver real results
+          minus the complexity.
+        </Typography>
+      </div>
+      <div>
+        <div className="smartsolutionall_container">
+          <Container className="year_container">
+            <Typography variant="h11" className="year_text">
+              25 Year
             </Typography>
+            <Typography className="subtitle">
+              of pioneering digital growth
+            </Typography>
+          </Container>
+          <div>
+            <Container className="year_container">
+              <Typography variant="h11" className="year_text">
+                2,000+
+              </Typography>
+              <Typography className="subtitle">
+                Satisfied Clients Across
+                <Typography className="industries_text">Industries</Typography>
+              </Typography>
+            </Container>
           </div>
           <div>
-            <Typography className="Text_container">
-              Meet the experts behind our success
-            </Typography>
+            <div>
+              <Container className="year_container">
+                <Typography variant="h11" className="year_text">
+                  21
+                </Typography>
+                <Typography className="subtitle">
+                  Countries Where Our
+                  <Typography className="industries_text">
+                    Solutions Impact Lives
+                  </Typography>
+                </Typography>
+              </Container>
+            </div>
+          </div>
+          <div>
+            <div>
+              <Container className="year_container">
+                <Typography variant="h11" className="year_text">
+                  4
+                </Typography>
+                <Typography className="subtitle">
+                  Continents Reached with Our
+                  <Typography className="industries_text">z
+                    Digital Innovations
+                  </Typography>
+                </Typography>
+              </Container>
+            </div>
           </div>
         </div>
-
-        <div className="Team_container">
-          <div className="Team_member_container">
-            <Typography className="Team_member_container" variant="h2">
-              Himanshu
-            </Typography>
-            <Typography className="second_text_contaier">
-              CEO & Founder
-            </Typography>
-            <div className="image_conainer">
-              <img className="linkedin_container" src={Linkedin} alt="" />
-              <img className="x_container" src={x} alt="" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <Typography className="Team_member_container" variant="h2">
-                Neha
+        <div className="talk_button">
+          <Button
+            className="talktoexpert_button"
+            text={
+              <Typography className="talktoexpert_text">
+                Talk to Expert
               </Typography>
-              <Typography className="second_text_contaier">CTO</Typography>
-              <div className="image_conainer">
-                <img className="linkedin_container" src={Linkedin} alt="" />
-                <img className="x_container" src={x} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <Typography className="Team_member_container" variant="h2">
-                Mike Davis
-              </Typography>
-              <Typography className="second_text_contaier">
-                Head of Marketing
-              </Typography>
-              <div className="image_conainer">
-                <img className="linkedin_container" src={Linkedin} alt="" />
-                <img className="x_container" src={x} alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <Typography className="Team_member_container" variant="h2">
-                Lisa Chen
-              </Typography>
-              <Typography className="second_text_contaier">
-                Lead Developer
-              </Typography>
-              <div className="image_conainer">
-                <img className="linkedin_container" src={Linkedin} alt="" />
-                <img className="x_container" src={x} alt="" />
-              </div>
-            </div>
-          </div>
+            }
+          ></Button>
         </div>
       </div>
-    );
-}
+    </div>
+  );
+};

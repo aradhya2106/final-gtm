@@ -1,18 +1,26 @@
 import Topbar from "../../Components/TopBar";
 import { About } from "./About";
 import { HeroBanner } from "./HeroBannerSection";
-import { Service } from "./Service";
-import { Ourteam } from "./Ourteam";
-import { Ourpartners } from "./Ourpartners"
+import React from "react";
+import {AboutUs} from "./AboutUs";
+import {Service} from "./Service"
+import { ServicePackages } from "./ServicePackages";
+import { Ourteam} from "./Ourteam";
+import {Clientsays} from "./Clientsays"
+import "./home.scss"; 
+// import { Ourpartners } from "./Ourpartners";  
 export const Home = () => {
     return (
-      <>
+      <div className="home-container">
         <Topbar />
-        <HeroBanner/>
+        <HeroBanner />
         <About />
-        <Service/>
+        <AboutUs />
+        <Service />
+        <ServicePackages />
         <Ourteam />
-        <Ourpartners /> 
-      </>
+        <Clientsays/>
+        
+      </div>
     );
 }

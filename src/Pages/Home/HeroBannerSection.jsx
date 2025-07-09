@@ -1,43 +1,48 @@
 import React from "react";
 import "./HeroBanner.scss";
-import { Typography } from "../../Components/Typography/Typography"; // Your reusable typography component
-import { Button } from "../../Components/Button/Button"; // Your reusable button
-import  hrobaner from "../../Assets/office.png"; // Import your hero banner image
+import { Typography } from "../../Components/Typography/Typography";
+import { Button } from "../../Components/Button/Button";
+import hrobaner from "../../Assets/office.png";
+import { Grid, GridItem } from "../../Components/Grid/Grid"; // ✅ Import your Grid system
 
 export const HeroBanner = () => {
   return (
-    <div className="hero-banner-container">
-      <div className="hero-banner">
-        <Typography variant="h1" className="hero-title">
-          Scale Your Business with Expert Solutions
+    <div className="hero_banner">
+      <div className="hero_banner_container">
+        <Typography variant="h1" className="web_text">
+           Web3. AI. <div className="Grow_text">Growth. Delivered.</div>
         </Typography>
-        <div className="hero-content">
-          <div className="hero-text">
-            <Typography variant="h2" className="hero-subtitle">
-              We provide comprehensive go-to-market strategies, development
-              services, and talent solutions to accelerate your growth.
-            </Typography>
+        <div>
+          <Typography variant="h2" className="hero_banner_text">
+            We help future forward Start-ups build Traction, Community, and
+            Revenue
+            <br />
+            with Full-Stack growth, Marketing, and Development services.
+          </Typography>
+        </div>
+        <div className="hero_banner_button">
+          <div>
+            <Button
+              className={"start_button"}
+              text={
+                <Typography variant="h2" className="Start_text">
+                  Start Scaling
+                </Typography>
+              }
+            />
           </div>
-          <div className="hero-buttons">
-            <div>
-              <Button
-                text={<Typography variant="h3">Schedule a Call</Typography>}
-              />
-            </div>
-            <div>
-              <Button
-                text={
-                  <Typography className="learn_text" variant="h3">
-                    Learn More
-                  </Typography>
-                }
-                className="learn-button"
-              />
-            </div>
+          <div>
+            <Button
+              className={"work_button"}
+              text={
+                <Typography variant="h2" className="MuiTypography-root">
+                  How It Works
+                </Typography>
+              }
+            ></Button>
           </div>
-        </div> 
+        </div>
       </div>
-      <div><img className="image_container" src={hrobaner} alt="" /></div>
     </div>
   );
 };

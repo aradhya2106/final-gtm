@@ -1,6 +1,7 @@
 import React from "react";
 import "./Grid.scss";
 
+// Grid Container
 export const Grid = ({ children, className = "", gap = "16px" }) => {
   return (
     <div className={`grid-container ${className}`} style={{ gap }}>
@@ -9,6 +10,7 @@ export const Grid = ({ children, className = "", gap = "16px" }) => {
   );
 };
 
+// Grid Item
 export const GridItem = ({
   children,
   colMobile = 12,
@@ -24,4 +26,5 @@ export const GridItem = ({
     </div>
   );
 };
+
 export default Grid;

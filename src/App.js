@@ -9,6 +9,7 @@ import SecondAnimation from './Components/SecondAnimation.jsx';
 import { Button } from './Components/Button/Button.jsx';
 import { Typography } from './Components/Typography/Typography.jsx';
 import { Home } from './Pages/Home/Home.jsx';
+import { Container } from './Components/Continer/Continer.jsx';
 
 function App() {
   return(

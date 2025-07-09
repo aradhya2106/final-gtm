@@ -1,6 +1,6 @@
 import "./Button.scss";
 
-export const Button = ({ text, onClick, className }) => {
+export const Button = ({ text, onClick, className}) => {
   return (
     <button
       className={`custom-button ${className}`}

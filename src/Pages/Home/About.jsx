@@ -1,51 +1,33 @@
 import { Container } from "../../Components/Continer/Continer";
 import { Typography } from "../../Components/Typography/Typography";
-import "./About.scss"; // Assuming you have a CSS file for styling
-import  rocket from "../../Assets/rocket.svg"; // Import your image
-import Frame from "../../Assets/Frame.png"
-import Vector from "../../Assets/Vector.png";
+import { Grid, GridItem } from "../../Components/Grid/Grid";
+import "./About.scss";
+// import rocket from "../../Assets/rocket.svg";
+// import Frame from "../../Assets/Frame.png";
+// import Vector from "../../Assets/Vector.png";
+// import { text } from "framer-motion/client";
 
 export const About = () => {
   return (
-    <div className="about-container">
-      <div className="about-header">
-        <Typography variant="h4"> About GTM Labs</Typography>
-      </div>
-      <div className="about-content">
-        We are a team of experts dedicated to helping businesses achieve their
-        go-to- market goals through innovative strategies and cutting-edge
-        solutions.
-      </div>
-      <div className="about-list">
-        <div className="about-list-item">
-          <Container className="inovation_container">
-            <img src={rocket} alt="" />
-          </Container>
-          <Typography variant="h2" className="Expert_text">Innovation</Typography>{" "}
-          <Typography className="innovation_text" variant="h3">
-            Cutting-edge solutions tailored to your business needs.
+    <div>
+      <Typography variant="h1" className="our_text">
+        {`OUR ADVANTAGES`.split("").map((char, idx) => (
+          <span key={idx} className="char">
+            {char === " " ? "\u00A0" : char}
+          </span>
+        ))}
+      </Typography>
+      <div className="text_container">
+        <Typography variant="h4" className="text_container">
+          Not Just Another Agency,
+          <Typography variant="h4" className="second_text">
+            A Real Growth Partner.
           </Typography>
-        </div>{" "}
-        <div className="about-list-item">
-          <Container className="Experties_text">
-            <img src={Frame} alt="" />
-          </Container>
-          <Typography variant="h2" className="Expert_text">Expertise</Typography>{" "}
-          <Typography className="innovation_text" variant="h3">
-            Experienced team with proven track record
+          <Typography className="text_container2">
+            Here’s how we help Web3 and AI startups grow with purpose.
           </Typography>
-        </div>
-        <div className="about-list-item">
-          <Container className="Experties_text">
-            <img src={Vector} alt="" />
-          </Container>
-          <Typography  variant="h2" className="Expert_text">Innovation</Typography>{" "}
-          <Typography className="innovation_text" variant="h3">
-            Strategies that drive measurable results.
-          </Typography>
-        </div>
+        </Typography>
       </div>
-      <div></div>
     </div>
   );
 };

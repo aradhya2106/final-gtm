@@ -1,116 +1,154 @@
-.hero-banner-container {
-    display: flex;;
-    align-items: center;
-    padding: 65px 45px;
-    background: #000000;
-    box-sizing: border-box;
-    padding-right: 0;
-    
-  
-    @media (max-width: 768px) {
-      flex-direction: column;
-      text-align: center;
-      padding: 40px 20px;
-    }
+.hero_banner {
+  display: grid;
+  place-items: center;
+  color: white;
+  padding: 4rem 2rem;
+  background-color: #000; // optional background for contrast
+  min-height: 100vh;
+}
+
+.hero_banner_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Web3. AI. Growth. Delivered. */
+.web_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.2;
+}
+
+.Grow_text {
+  margin-left: 10px;
+  background: linear-gradient(to right, #30A0FF, #B145FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Subtitle paragraph */
+.hero_banner_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  line-height: 1.6;
+  padding: 0 1rem;
+  margin-top: 12px;
+}
+
+/* Button Group */
+.hero_banner_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.start_button {
+  border-radius: 30px;
+  height: 50px;
+  width: 180px;
+  background: linear-gradient(to right, #30A0FF, #B145FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Start_text {
+  color: white;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: bold;
+}
+
+.work_button {
+  position: relative;
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 180px;
+  padding: 2px;
+  background: linear-gradient(to right, #30A0FF, #B145FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work_button::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: black;
+  border-radius: 28px;
+  z-index: 1;
+}
+
+.MuiTypography-root {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(to right, #30A0FF, #B145FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+/* ===================== Responsive ===================== */
+
+/* Tablet View (width <= 1024px) */
+@media screen and (max-width: 1024px) {
+  .hero_banner {
+    padding: 3rem 1.5rem;
   }
-  
-  .hero-banner {
-    flex: 1;
-    animation: fadeInUp 1.2s ease-in-out;
+
+  .hero_banner_button {
+    gap: 20px;
   }
-  
-  .hero-title {
-    font-size: 48px;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 20px;
-  
-    @media (max-width: 768px) {
-      font-size: 32px;
-    }
-  }
-  
-  .hero-content {
-    display: flex;
+
+  .web_text {
+    font-size: 3rem;
     flex-direction: column;
-    gap: 24px;
-    max-width: 600px;
-  
-    @media (max-width: 768px) {
-      align-items: center;
-    }
   }
-  
-  .hero-text {
-    font-size: 18px;
-    color:white;
-    line-height: 1.6;
-  }
-  .hero-buttons{
-    display: flex;
-    justify-content: start;
-    gap: 16PX;
-  }
-  .learn-button{
-    background-color: #222;
-    color: #fff;
-  }
-  .learn_text{
-    color: white;
+}
 
-  }
-  
-  .hero-button {
-    width: fit-content;
-    padding: 12px 28px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: 600;
-    background-color: #007bff;
-    color: #fff;
-    transition: background-color 0.3s ease;
-  
-    &:hover {
-      background-color: darken(#007bff, 10%);
-    }
+/* Mobile View (width <= 768px) */
+@media screen and (max-width: 768px) {
+  .hero_banner {
+    padding: 2rem 1rem;
   }
 
-  
-  // Right section placeholder for animation
-  .hero-banner-container > div:last-child {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+  .hero_banner_text {
+    font-size: 1rem;
   }
-  .image_container{
-    display: flex;
-    justify-content: center;
-    width : 400px;
-    height:300px;
-    left: 637px;
-    border-top-left-radius: 200px;
-  
 
+  .web_text {
+    flex-direction: column;
+    font-size: 2rem;
   }
-  
-  // Enhanced morphing + glow effect
-  // @keyframes morphGlow {
-  //   0% {
-  //     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  //     transform: rotate(0deg) scale(1);
-  //     box-shadow: 0 0 20px rgba(74, 144, 226, 0.4);
-  //   }
-  //   50% {
-  //     border-radius: 30% 60% 70% 40% / 50% 60% 40% 70%;
-  //     transform: rotate(180deg) scale(1.05);
-  //     box-shadow: 0 0 40px rgba(74, 144, 226, 0.7);
-  //   }
-  //   100% {
-  //     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  //     transform: rotate(360deg) scale(1);
-  //     box-shadow: 0 0 20px rgba(74, 144, 226, 0.4);
-  //   }
-  
-  
+
+  .hero_banner_button {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  .start_button,
+  .work_button {
+    width: 100%;
+    max-width: 280px;
+  }
+}

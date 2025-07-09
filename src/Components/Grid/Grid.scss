@@ -1,33 +1,26 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 16px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  // Mobile first
-  @for $i from 1 through 12 {
-    .col-mobile-#{$i} {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+}
+
+/* Responsive column spans */
+@for $i from 1 through 12 {
+  .col-mobile-#{$i} {
+    @media (max-width: 576px) {
       grid-column: span $i;
     }
   }
-  
-  // Tablet ≥ 600px
-  @media (min-width: 600px) {
-    @for $i from 1 through 12 {
-      .col-tab-#{$i} {
-        grid-column: span $i;
-      }
+
+  .col-tab-#{$i} {
+    @media (min-width: 577px) and (max-width: 992px) {
+      grid-column: span $i;
     }
   }
-  
-  // Laptop/Desktop ≥ 1024px
-  @media (min-width: 1024px) {
-    @for $i from 1 through 12 {
-      .col-laptop-#{$i} {
-        grid-column: span $i;
-      }
+
+  .col-laptop-#{$i} {
+    @media (min-width: 993px) {
+      grid-column: span $i;
     }
   }
-  
+}

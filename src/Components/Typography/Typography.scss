@@ -3,25 +3,83 @@
   
   
     &.h1 {
-      font-size: 60px;
+      font-size: 79px;
       font-weight: 400;
-     line-height: 60px;
+     line-height: 81px;
      
       
     }
   
     &.h2 {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 28px;
     }
   
     &.h3 {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       line-height: 100%;
+    ;
     }
+    &.h4 {
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 60px;
+    }
+    &.h5 {
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 60px;
+    }
+    &.h6{
+      font-size: 16px;
+      font-weight: 400;
+      // line-height: 25.2px;
+    }
+    &.h7{
+      font-size: 20px;
+      font-weight: 465;
+     
+    }
+    &.h8{
+      font-size: 30px;
+      font-weight: 465;
+     
+    }
+    &.h9{
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 47px;
+    
+    }
+    &.h10{  
+        font-size: 16px;
+        font-weight: 400;
+      line-height: 25.2px;
+      
+    }
+    &.h11{  
+      font-size: 32.4px;
+      font-weight: 1000;
+    line-height: 65px;
+  }
   
+  &.h12{  
+    font-size: 16.7px;
+    font-weight: 400;
+  line-height: 25px;
+}
+// &.h13{ 
+// //   font-size: 32.4px;
+// //   font-weight: 400;
+// // line-height: 65px;
+// }
+// &.h14{  
+// //   font-size: 32.4px;
+// //   font-weight: 400;
+// // line-height: 65px;
+// }
     &.subtitle {
       font-size: 36px;
       font-weight: 400;
@@ -40,5 +98,5 @@
       font-weight: 400;
       line-height: 24px;
     }
-  }
+}
   

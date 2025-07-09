@@ -15,8 +15,28 @@ export const Typography = ({
         return "h2";
       case "h3":
         return "h3";
+      case "h5":
+        return "h5";
       case "subtitle":
         return "h4";
+      case "h6":
+        return "h6";
+      case "h7":
+        return "h7";
+      case "h8":
+        return "h8";
+      case "h9":
+        return "h9";
+      case "h10":
+        return "h10";
+      case "h11":
+        return "h11";
+      case "h12":
+        return "h12";
+      case "h13":
+        return "h13";
+      case "h14":
+        return "h14";
       case "caption":
         return "span";
       case "body":

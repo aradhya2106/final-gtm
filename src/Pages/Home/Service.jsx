@@ -1,103 +1,104 @@
 import React from "react";
 import "./Service.scss";
 import { Typography } from "../../Components/Typography/Typography";
-import { Button } from "../../Components/Button/Button";
-import { Container } from "../../Components/Continer/Continer";
-import greatarorless from "../../Assets/gretarorless.png";
-import syran from "../../Assets/syrna.png";
-import vector  from "../../Assets/Vector.png"
-export const Service = () => {
-  return (
-    <div className="service-container">
-      <div className="service_second_container">
-        {" "}
-        <Typography variant="h2">Our Services</Typography>
-      </div>
+import { ServiceCard } from "../../Components/ServiceCard/ServiceCard";
 
-      <div className="statement_continer">
-        Comprehensive solutions for your business growth
-      </div>
-      <div className="service_list_container">
-        <div className="core_services">Core Services</div>
-        <div className="service_list">
-          <div className="developer_container">
-            <Container className="develoment_secondcontainer">
-              <img src={greatarorless} alt="" />
-            </Container>
-            <Typography className="development_text" variant="h2">
-              Development
-            </Typography>
-            <Typography variant="h3" className="development2_text">
-              Full-stack development services for web and mobile applications.
-            </Typography>
-          </div>
-          <div>
-            <div className="marketing_container">
-              <Container className="develoment_secondcontainer">
-                <img src={syran} alt="" />
-              </Container>
-              <Typography className="development_text" variant="h2">
-                Marketing
-              </Typography>
+import marketingIcon from "../../Assets/marketing.png";
+import growthIcon from "../../Assets/Growth.png";
+import developmentIcon from "../../Assets/Development.png";
+import eventIcon from "../../Assets/EventServices.png";
+import Rectangular from "../../Assets/Rectangular.png"
 
-              <Typography variant="h3" className="development2_text">
-                Strategic marketing campaigns to reach your target audience.
-              </Typography>
-            </div>
-          </div>
-          <div>
-            <div className="Consulting_container">
-              <Container className="develoment_secondcontainer">
-                <img src={vector} alt="" />
-              </Container>
-              <Typography className="development_text" variant="h2">
-                Consulting
-              </Typography>
-              <Typography variant="h3" className="development2_text">
-                Expert business consulting to optimize your operations.
-              </Typography>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="Core_container">
-            <Typography> Service Packages</Typography>
-          </div>
-          <div className="service_package_list">
-            <div className="Starter_package">
-              <Typography className="Starer_text">Starter</Typography>
-              <Typography className="price">$999</Typography>
-              <Typography className="Starer_price">
-                <Typography variant="h3"> Basic consultation</Typography>
-                <Typography variant="h3"> Strategy planning</Typography>
-                <Typography variant="h3"> Email support</Typography>
-              </Typography>
-              <Button className="button_continer" text={"Get Started"} />
-            </div>
-            <div className="Starter_package">
-              <Button className="popular_container" text={"Popular"} />
-              <Typography className="Starer_text">Professional</Typography>
-              <Typography className="price">$2999</Typography>
-              <Typography className="Starer_price">
-                <Typography variant="h3">Full consultation</Typography>
-                <Typography variant="h3"> Implementation</Typography>
-                <Typography variant="h3"> Priority support</Typography>
-              </Typography>
-              <Button className="button_continer" text={"Get Started"} />
-            </div>
-            <div className="Starter_package">
-              <Typography className="Starer_text">Enterprise</Typography>
-              <Typography className="price">Custom</Typography>
-              <Typography className="Starer_price">
-                <Typography variant="h3">Custom solutions</Typography>
-                <Typography variant="h3"> Dedicated team</Typography>
-                <Typography variant="h3">24/7 support</Typography>
-              </Typography>
-              <Button className="contactus_continer" text={"Get Started"} />
-            </div>
-          </div>
-        </div>
-      </div>
+export const Service = () => (
+  <div className="service_section">
+    <Typography variant="h1" className="service_title">
+      {"SERVICES".split("").map((char, idx) => (
+        <span key={idx} className="char">
+          {char === " " ? "\u00A0" : char}
+        </span>
+      ))}
+    </Typography>
+
+    <div className="service_intro">
+      <Typography variant="h5" className="Built_text">
+        Your All‑In‑One
+        <Typography variant="h5" className="Structure_text">
+          Web3 Growth Engine
+        </Typography>
+      </Typography>
+
+      <Typography variant="body1" className="service_description">
+        End‑to‑end strategies & execution to help Web3, AI, and
+        <br />
+        tech startups grow with clarity and confidence.
+      </Typography>
     </div>
-  );
-};
+
+    <div className="service_card_wrapper">
+      <ServiceCard
+        Rectangular={Rectangular}
+        title="MARKETING"
+        subtitle=".Dominate the Platforms That Matter."
+        description="We turn attention into traction with high-impact content, social strategy, and KOL-powered 
+        campaigns that cut through the noise and put your brand front and center across X, Discord, Telegram, 
+        and beyond."
+        src={marketingIcon}
+        items={[
+          "Social media management",
+          "High‑impact content",
+          "Influencer & KOL campaigns",
+          "Press releases & AMA campaigns",
+          "Global digital & physical campaigns",
+        ]}
+      />
+      <ServiceCard
+        Rectangular={Rectangular}
+        title="GROWTH"
+        subtitle="Traction-first strategies for high-velocity teams."
+        description="We go beyond strategy. Our team designs 
+        and drives custom growth roadmaps aligned to your startup’s stage,
+         delivering measurable outcomes that move the needle fast."
+        src={growthIcon}
+        items={[
+          "strategy design & roadmap execution",
+          "Business growth consulting",
+          "Fundraising support",
+          "Product launch campaigns",
+          "referral-based community growth",
+        ]}
+      />
+      <ServiceCard
+        Rectangular={Rectangular}
+        title="DEVELOPMENT"
+        subtitle="Build What Matters. Faster. Smarter."
+        description="From high-performance websites and dApps to AI agents and trading bots we 
+        bring your tech to life with 
+        end-to-end development tailored for emerging tech founders."
+        src={developmentIcon}
+        items={[
+          "Web & app development",
+          "Smart contract development & audits",
+          "Telegram mini-app & bot development",
+          "AI agents & trading bots",
+          "Frontend UI/UX implementation",
+        ]}
+      />
+      <ServiceCard
+        Rectangular={Rectangular}
+        title="EVENT SERVICES"
+        subtitle="Create Experiences That Build Community"
+        description="Host unforgettable events, both digital and physical. Whether it’s 
+        a major Web3 summit or niche founder AMA, 
+        we handle everything from ideation to post-event amplification."
+        src={eventIcon}
+        items={[
+          "End-to-end IRL & virtual event exec.",
+          "Community-driven events & activations",
+          "Influencer campaigns + partnerships",
+          "Post-event media, reports.",
+          "Conferences, launch events, panels",
+        ]}
+      />
+    </div>
+  </div>
+);

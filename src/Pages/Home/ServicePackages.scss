@@ -1,0 +1,124 @@
+
+
+
+.servicepackage{
+    // padding:153px ;
+    padding-bottom: 153px;
+    padding-top: 114px;
+    padding-left: 76px;
+
+}
+.servicepackage-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our_text {
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  
+    .char {
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+      background: linear-gradient(to right, #555, #555); // dull color
+      opacity: 0.4;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+  
+    .char:hover {
+      background: linear-gradient(to right, #30A0FF, #B145FF);
+      opacity: 1;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .sub_itle_container{
+    padding-top: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .subtitle_text{
+    color: white;
+   
+  }  
+  .your_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .Structure_text {
+    background: linear-gradient(to right, #30A0FF, #B145FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .servicecontainer{
+    padding-top: 114px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+  .servicepackage_card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #FFFFFF;
+    width: 384px;
+    height: 316px;
+    box-shadow: 1px 35px 100px rgba(255, 255, 255, 0.25); 
+    border-radius: 1rem;
+  }
+  
+.Head_text{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.image{
+    margin-right: 8px;
+}
+.Get_Button{
+
+}
+.get_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(to right, #B145FF, #30A0FF);
+    width:230px ;
+    height: 50px;
+    margin-top:28px ;
+      }
+  
+  .text_button {
+    color: black;
+  }
+  .title1_button{
+   padding-bottom: 11px;
+   color: white;
+  }
+  .all_container{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+     gap: 55px;
+    
+  }

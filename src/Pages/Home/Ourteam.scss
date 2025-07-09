@@ -1,53 +1,87 @@
-.ourteam-container
-{
-    background-color:black;
-    padding: 80px;
-}
-.Our_team_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-}
-.Text_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    margin-top: 21px;;
-}
-.Team_member_container{
- 
-    color: white;
-}
-.second_text_contaier{
-    color: white;
-}
-.linkedin_container{
+
+
+.container_smartsolution{
+  // padding: 136px;
+
 
 }
-.Team_container{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-left: 86px;
-    margin-right: 170px;
-    margin-top: 51px;
-   
+
+.smartsolution_container{
+  padding-top: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.x_container{
-    margin-left:12px;
+.smartsolution_subtitle_text {
+  color: white;
+ 
+}  
+.Smartsolution_text {
+  background: linear-gradient(to right, #30A0FF, #B145FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.Team_member_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
+.smartsolution_description_text{
+  padding-top: 19px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.image_conainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.year_container{
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 257.6px;
+  height: 193px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+
+}
+.year_text{
+   color:  #0D99FF ;
+   padding-bottom: 4.5px;
+ 
+}
+.subtitle{
+  color: white;
+  padding-bottom: 55.5px ;
+}
+.smartsolutionall_container{
+  padding-top:60px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:20px ;
+  
+
+}
+.industries_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.talk_button{
+padding-top: 54px;
+}
+.talktoexpert_button {
+  
+  border-radius: 30px;
+  width: 230px;
+  height: 50px;
+  background: linear-gradient(to right, #30A0FF, #B145FF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.talktoexpert_text{
+  color:black;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 600;
 }
