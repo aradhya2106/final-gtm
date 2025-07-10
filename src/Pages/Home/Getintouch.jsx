@@ -49,7 +49,9 @@ import   "./Getintouch.scss"
             </div>
             <div>
               <div>
-                <Typography>Schedule a Call</Typography>
+                <Typography className="schedule_Call_text">
+                  Schedule a Call
+                </Typography>
               </div>
               <div>
                 <Container className="schadule_Call">
@@ -58,20 +60,21 @@ import   "./Getintouch.scss"
                   </Typography>
                   <div className="times_container">
                     <Container>
-                      <Button className="timer_comtainer">
-                        <Typography >30 mins</Typography>
-                      </Button>
+                      <Button className="timer_comtainer"
+                        text={<Typography> 15min </Typography>}/>
+                    
                     </Container>
                     <Container>
-                      <Button className="timer_comtainer">
-                        <Typography>30 mins</Typography>
-                      </Button>
+                      <Button
+                        className="timer_comtainer"
+                        text={<Typography> 30 mins </Typography>}
+                      />
                     </Container>
                     <Container>
-                      <Button className="timer_comtainer">
-                      text={<Typography >30 mins</Typography>}
-                        
-                      </Button>
+                      <Button
+                        className="timer_comtainer"
+                        text={<Typography> 1 hour </Typography>}
+                      />
                     </Container>
                   </div>
                   <Typography className="whattime_text">

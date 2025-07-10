@@ -104,6 +104,11 @@ padding-left:106px ;
     background-color: white;
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
+    height: 41px;
+    padding: 11px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Change background to green and text color to white on hover */
@@ -126,4 +131,9 @@ padding-left:106px ;
 }
 .whattime_text{
     padding-top:17px;
+}
+.schedule_Call_text{
+    padding-top: 81px;
+    padding-bottom: 17px;
+
 }
