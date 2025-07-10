@@ -52,7 +52,7 @@ export const AboutUs = () => {
           </Typography>
           <div className="aboutus_button">
             <Button
-              className={"GettoKnowUs_button"}
+              className="GettoKnowUs_button"
               text={
                 <Typography className="GettoKnowUs_text">
                   Get to Know Us

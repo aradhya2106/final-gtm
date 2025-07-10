@@ -90,9 +90,9 @@
     width: 208px;
     height: 50px;
     background: linear-gradient(to right, #30A0FF, #B145FF);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content:end;
+    // align-items: end;
     margin: 0 auto;
   }
   
@@ -125,7 +125,7 @@
     bottom: -3rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
+    // z-index: -1;
   }
   
   /* ===================== Responsive Media Queries ===================== */
@@ -161,6 +161,8 @@
   }
   .sub_title_container{
     display: flex ;
+    justify-content: center;
+    align-items: center;
     
   }
   
