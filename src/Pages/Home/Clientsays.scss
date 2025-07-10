@@ -1,11 +1,27 @@
 .clientsay_conatiner{
+    padding:78px;
     
+
+}
+.clientall_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 .whatour_text{
     color: white;
+
+   
 }
 .Clientsay_text {
     background: linear-gradient(to right, #30A0FF, #B145FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .subtitle_client_text{
+   padding-top:14px ;
+    
+  }
+  

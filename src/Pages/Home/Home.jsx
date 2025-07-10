@@ -8,6 +8,7 @@ import { ServicePackages } from "./ServicePackages";
 import { Ourteam} from "./Ourteam";
 import {Clientsays} from "./Clientsays"
 import "./home.scss"; 
+import {Getintouch} from  "./Getintouch"
 // import { Ourpartners } from "./Ourpartners";  
 export const Home = () => {
     return (
@@ -20,7 +21,7 @@ export const Home = () => {
         <ServicePackages />
         <Ourteam />
         <Clientsays/>
-        
+        <Getintouch/>
       </div>
     );
 }

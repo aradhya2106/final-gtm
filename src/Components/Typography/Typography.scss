@@ -40,6 +40,7 @@
     &.h7{
       font-size: 20px;
       font-weight: 465;
+      font-family: inter;
      
     }
     &.h8{
@@ -51,6 +52,7 @@
         font-size: 48px;
         font-weight: 400;
         line-height: 47px;
+        font-family: Sora;;
     
     }
     &.h10{  
@@ -70,15 +72,42 @@
     font-weight: 400;
   line-height: 25px;
 }
-// &.h13{ 
-// //   font-size: 32.4px;
-// //   font-weight: 400;
-// // line-height: 65px;
+&.h13{ 
+  font-size: 14px;
+      font-weight: 400;
+      line-height: 5px;
+      font-family: inter;
+}
+&.h14{  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: Sora;
+  
+}
+&.h15{  
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: Sora;
+}
+// &.h14{  
+//   font-size: 18px;
+//   font-weight: 400;
+//   line-height: 28px;
+//   font-family: Sora;
 // }
 // &.h14{  
-// //   font-size: 32.4px;
-// //   font-weight: 400;
-// // line-height: 65px;
+//   font-size: 18px;
+//   font-weight: 400;
+//   line-height: 28px;
+//   font-family: Sora;
+// }
+// &.h14{  
+//   font-size: 18px;
+//   font-weight: 400;
+//   line-height: 28px;
+//   font-family: Sora;
 // }
     &.subtitle {
       font-size: 36px;
@@ -100,3 +129,108 @@
     }
 }
   
+.Rodriguez_container {
+  width: 384px;
+  height: 186px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 2px #d6cfe7, 0 0 6px #2e1a47;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  will-change: transform, box-shadow;
+}
+
+/* Hover triggers the float animation */
+.Rodriguez_container:hover {
+  animation: floatGlow 3s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 0 2px #d6cfe7, 0 0 5px #2e1a47;
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 0 0 3px #d6cfe7, 0 0 9px #2e1a47;
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 0 2px #d6cfe7, 0 0 5px #2e1a47;
+  }
+}
+
+
+//
+.Rodriguez_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Techc_corp_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.Gtm_lab_Text{
+  padding-left: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  
+}
+.maria_Text{
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding-left: 1.7rem;
+}
+.client_say_all_container{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   gap: 24px;
+}
+
+//2container
+.Mari_Garcia_container {
+  width: 384px;
+  height: 186px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 2px #d6cfe7, 0 0 6px #2e1a47;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  will-change: transform, box-shadow;
+}
+
+/* Hover triggers the float animation */
+.Mari_Garcia_container:hover {
+  animation: floatGlow 3s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 0 2px #d6cfe7, 0 0 5px #2e1a47;
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 0 0 3px #d6cfe7, 0 0 9px #2e1a47;
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 0 2px #d6cfe7, 0 0 5px #2e1a47;
+  }
+}
+

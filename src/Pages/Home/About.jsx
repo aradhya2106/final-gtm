@@ -5,7 +5,7 @@ import "./About.scss";
 import Freampeople from "../../Assets/Freampeople.png"
 import  circular from "../../Assets/circular.png"
 import  rocket from  "../../Assets/rocket.png"
-// import  internet from "../../Assets/Internet.png"
+import  internet from "../../Assets/Internet.png"
 // import rocket from "../../Assets/rocket.svg";
 // import Frame from "../../Assets/Frame.png";
 // import Vector from "../../Assets/Vector.png";
@@ -33,36 +33,75 @@ export const About = () => {
         </Typography>
       </div>
       <div>
-      <div class="cards-container">
-  {/* <!-- Left Column --> */}
-  <div class="column">
-    <div class="card card-1">
-      <img src="Freampeople" alt="" class="card-icon" />
-      <h3>Web3 & AI Native Team</h3>
-      <p>Built for Web3. We speak the language of DeFi, DAOs, …</p>
-    </div>
-    <div class="card card-3">
-      <img src="rocket" alt="" class="card-icon" />
-      <h3>Fundraising & Launchpad Support</h3>
-      <p>We support your raise with sharp GTM strategy, decks, …</p>
-    </div>
-  </div>
+        <div class="cards-container">
+          {/* <!-- Left Column --> */}
+          <div class="column">
+            <div class="card card-1">
+              <img src={Freampeople} alt="" class="card-icon" />
+              <h3>
+                <Typography className="outcome_text" variant="h14">
+                  Web3 & AI Native Team
+                </Typography>
+              </h3>
+              <p>
+                <Typography variant="h13">
+                  Built for Web3. We speak the language of DeFi, DAOs, and AI
+                  creating strategies made for crypto-native audiences, not Web2
+                  templates.
+                </Typography>
+              </p>
+            </div>
+            <div class="card card-3">
+              <img src={rocket} alt="" class="card-icon" />
+              <h3>
+                <Typography className="outcome_text" variant="h14">
+                  Fundraising & Launchpad Support
+                </Typography>
+              </h3>
+              <p>
+                <Typography variant="h13">
+                  We support your raise with sharp GTM strategy, decks, and warm
+                  intros then help you launch seamlessly across Tier 1–3
+                  platforms with full listing, liquidity, and compliance
+                  support.
+                </Typography>
+              </p>
+            </div>
+          </div>
 
-  {/* <!-- Right Column --> */}
-  <div class="column">
-    <div class="card card-2">
-      <img src="circular" alt="" class="card-icon" />
-      <h3>Outcome‑Driven Approach</h3>
-      <p>We build campaigns that drive real business …</p>
-    </div>
-    <div class="card card-4">
-      <img src="internet" alt="" class="card-icon" />
-      <h3>Global Network Access</h3>
-      <p>We launch globally, activate locally. With on‑ground partners …</p>
-    </div>
-  </div>
-</div>
-
+          {/* <!-- Right Column --> */}
+          <div class="column">
+            <div class="card card-2">
+              <img src={circular} alt="" class="card-icon" />
+              <h3>
+                <Typography className="outcome_text" variant="h14">
+                  Outcome-Driven Approach
+                </Typography>
+              </h3>
+              <p>
+                <Typography variant="h13">
+                  We build campaigns that drive real business results from user
+                  growth to fundraising with ROI at the core of everything we
+                  do.
+                </Typography>
+              </p>
+            </div>
+            <div class="card card-4">
+              <img src={internet} alt="" class="card-icon" />
+              <h3>
+                <Typography className="outcome_text" variant="h14">
+                  Global Network Access
+                </Typography>
+              </h3>
+              <p>
+                <Typography variant="h13">
+                  We launch globally, activate locally. With on-ground partners
+                  and cultural fluency, we scale campaigns that truly resonate.
+                </Typography>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
