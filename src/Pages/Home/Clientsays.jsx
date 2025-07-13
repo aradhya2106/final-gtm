@@ -15,7 +15,7 @@ export const Clientsays = () => {
               Clients Say
             </Typography>
           </Typography>
-          <Typography variant="h7" className="subtitle_client_text">
+          <Typography variant="h22" className="subtitle_client_text">
             Don't just take our word for it
           </Typography>
         </div>
@@ -27,7 +27,7 @@ export const Clientsays = () => {
             <Typography variant="h10" className="Rodriguez_text">
               <b>Rodriguez</b>
             </Typography>
-            <Typography variant="h7" className="Techc_corp_text">
+            <Typography variant="h21" className="Techc_corp_text">
               CEO, TechCorp
             </Typography>
             <Typography variant="h6" className="Gtm_lab_Text">
@@ -41,7 +41,7 @@ export const Clientsays = () => {
             <Typography variant="h10" className="Rodriguez_text">
               <b> Maria Garcia</b>
             </Typography>
-            <Typography variant="h7" className="Techc_corp_text">
+            <Typography variant="h21" className="Techc_corp_text">
               Founder, StartupXYZ
             </Typography>
             <Typography variant="h6" className="maria_Text">
@@ -55,7 +55,7 @@ export const Clientsays = () => {
             <Typography variant="h10" className="Rodriguez_text">
               <b> David Kim </b>
             </Typography>
-            <Typography variant="h7" className="Techc_corp_text">
+            <Typography variant="h21" className="Techc_corp_text">
               CTO, InnovateLab
             </Typography>
             <Typography variant="h6" className="Gtm_lab_Text">

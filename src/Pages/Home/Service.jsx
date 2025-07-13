@@ -11,7 +11,7 @@ import Rectangular from "../../Assets/Rectangular.png"
 
 export const Service = () => (
   <div className="service_section">
-    <Typography variant="h1" className="service_title">
+    <Typography variant="h17" className="service_title">
       {"SERVICES".split("").map((char, idx) => (
         <span key={idx} className="char">
           {char === " " ? "\u00A0" : char}
@@ -27,7 +27,7 @@ export const Service = () => (
         </Typography>
       </Typography>
 
-      <Typography variant="body1" className="service_description">
+      <Typography variant="h5" className="service_description">
         End‑to‑end strategies & execution to help Web3, AI, and
         <br />
         tech startups grow with clarity and confidence.

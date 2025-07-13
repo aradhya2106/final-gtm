@@ -40,6 +40,20 @@ export const Typography = ({
       case "h15":
         return "h15";
       case "caption":
+        return "h15";
+      case "caption":
+        return "h16";
+      case "caption":
+        return "h17";
+      case "caption":
+        return "h18";
+      case "caption":
+        return "h19";
+      case "caption":
+        return "h20";
+      case "caption":
+        return "h21";
+      case "caption":
         return "span";
       case "body":
       default:
@@ -50,7 +64,7 @@ export const Typography = ({
   const Tag = getTag();
 
   return (
-    <Tag className={`typography ${variant} ${className}`} style={style}>
+    <Tag className={`typography ${variant} ${className} `} style={style}>
       {children}
     </Tag>
   );

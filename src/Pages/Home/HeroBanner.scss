@@ -1,13 +1,57 @@
 .hero_banner {
+  position: relative;
   display: grid;
   place-items: center;
   color: white;
   padding: 4rem 2rem;
-  background-color: #000; // optional background for contrast
-  min-height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+/* Left blue shade - lighter and moved upward */
+.gradient_circle_left {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: -350px;
+  top: 30%; /* moved up from 60% */
+  transform: translateY(-50%);
+  background: radial-gradient(
+    circle at center,
+    rgba(48, 160, 255, 0.5) 10%,
+    rgba(48, 160, 255, 0.2) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  opacity: 1;
+  filter: blur(40px); /* lighter and sharper */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Right purple shade - lighter */
+.gradient_circle_right {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  right: -350px;
+  top: 40%;
+  transform: translateY(-50%);
+  background: radial-gradient(
+    circle at center,
+    rgba(177, 69, 255, 0.5) 10%,
+    rgba(177, 69, 255, 0.2) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  opacity: 1;
+  filter: blur(40px); /* lighter and sharper */
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero_banner_container {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -16,7 +60,6 @@
   text-align: center;
 }
 
-/* Web3. AI. Growth. Delivered. */
 .web_text {
   display: flex;
   justify-content: center;
@@ -34,19 +77,14 @@
   font-weight: bold;
 }
 
-/* Subtitle paragraph */
 .hero_banner_text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   line-height: 1.6;
   padding: 0 1rem;
   margin-top: 12px;
+  text-align: center;
 }
 
-/* Button Group */
 .hero_banner_button {
   display: flex;
   justify-content: center;
@@ -107,9 +145,7 @@
   font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
-/* ===================== Responsive ===================== */
-
-/* Tablet View (width <= 1024px) */
+/* Responsive */
 @media screen and (max-width: 1024px) {
   .hero_banner {
     padding: 3rem 1.5rem;
@@ -120,12 +156,10 @@
   }
 
   .web_text {
-    font-size: 3rem;
     flex-direction: column;
   }
 }
 
-/* Mobile View (width <= 768px) */
 @media screen and (max-width: 768px) {
   .hero_banner {
     padding: 2rem 1rem;
@@ -136,7 +170,6 @@
   }
 
   .web_text {
-    flex-direction: column;
     font-size: 2rem;
   }
 

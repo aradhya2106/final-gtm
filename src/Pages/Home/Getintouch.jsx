@@ -14,10 +14,10 @@ import   "./Getintouch.scss"
     return (
       <div className="Top_container">
         <div className="getintouch_container">
-          <Typography variant="h4" className="touch_text">
+          <Typography variant="h9" className="touch_text">
             Get In Touch
           </Typography>
-          <Typography>Ready to start your project? Let's talk.</Typography>
+          <Typography variant="h22">Ready to start your project? Let's talk.</Typography>
         </div>
         <div className="contactinfo_container">
           <div className="gtmlogo_container">
@@ -26,18 +26,18 @@ import   "./Getintouch.scss"
           <div className="shedul_call_comntainer">
             <div>
               <div className="">
-                <Typography className="contactinfo_text" variant="h15">
+                <Typography  className="contactinfo_text" variant="h15">
                   Contact Information
                 </Typography>
                 <Typography className="contactinfo_text" variant="h10">
                   <img className="Emailicon_image" src={Emailicon} alt="" />{" "}
                   contact@gtmlabs.xyz
                 </Typography>
-                <Typography className="phone_no_text" variant="h12">
+                <Typography className="phone_no_text" variant="h10">
                   <img className="Callicon_image" src={Callicon} alt="" /> +91
                   7011844199
                 </Typography>
-                <Typography variant="h12">
+                <Typography variant="h10">
                   <img
                     className="Locationicon_image"
                     src={Locationicon}
@@ -87,8 +87,11 @@ import   "./Getintouch.scss"
           </div>
         </div>
       </div>
+
+      
     );
 
  }
 
 
+////

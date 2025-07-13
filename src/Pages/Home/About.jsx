@@ -14,7 +14,7 @@ import  internet from "../../Assets/Internet.png"
 export const About = () => {
   return (
     <div>
-      <Typography variant="h1" className="our_text">
+      <Typography variant="h17" className="our_text">
         {`OUR ADVANTAGES`.split("").map((char, idx) => (
           <span key={idx} className="char">
             {char === " " ? "\u00A0" : char}
@@ -22,12 +22,12 @@ export const About = () => {
         ))}
       </Typography>
       <div className="text_container">
-        <Typography variant="h4" className="text_container">
+        <Typography variant="h5" className="text_container">
           Not Just Another Agency,
-          <Typography variant="h4" className="second_text">
+          <Typography variant="h5" className="second_text">
             A Real Growth Partner.
           </Typography>
-          <Typography className="text_container2">
+          <Typography variant="h2" className="text_container2">
             Here’s how we help Web3 and AI startups grow with purpose.
           </Typography>
         </Typography>

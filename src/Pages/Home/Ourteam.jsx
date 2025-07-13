@@ -14,7 +14,7 @@ export const Ourteam = () => {
         <Typography variant="h9" className="smartsolution_subtitle_text ">
           Built to Grow Your Business
         </Typography>
-        <Typography variant="h10" className="smartsolution_description_text">
+        <Typography variant="h20" className="smartsolution_description_text">
           Unlike generic AI tools, our solutions are custom-built to fit your
           workflows seamlessly integrating <br /> with your current systems
           without disrupting operations. Whether it’s automation, smarter
@@ -29,16 +29,15 @@ export const Ourteam = () => {
             <Typography variant="h11" className="year_text">
               25 Year
             </Typography>
-            <Typography className="subtitle">
-              of pioneering digital growth
-            </Typography>
+            <Typography variant="h12">of pioneering digital growth</Typography>
+            <Typography variant="h12">&nbsp;</Typography>
           </Container>
           <div>
             <Container className="year_container">
               <Typography variant="h11" className="year_text">
                 2,000+
               </Typography>
-              <Typography className="subtitle">
+              <Typography variant="h12">
                 Satisfied Clients Across
                 <Typography className="industries_text">Industries</Typography>
               </Typography>
@@ -50,9 +49,9 @@ export const Ourteam = () => {
                 <Typography variant="h11" className="year_text">
                   21
                 </Typography>
-                <Typography className="subtitle">
+                <Typography variant="h12">
                   Countries Where Our
-                  <Typography className="industries_text">
+                  <Typography variant="h12" className="industries_text">
                     Solutions Impact Lives
                   </Typography>
                 </Typography>
@@ -65,10 +64,10 @@ export const Ourteam = () => {
                 <Typography variant="h11" className="year_text">
                   4
                 </Typography>
-                <Typography className="subtitle">
+                <Typography variant="h12">
                   Continents Reached with Our
-                  <Typography className="industries_text">z
-                    Digital Innovations
+                  <Typography variant="h12" className="industries_text">
+                    z Digital Innovations
                   </Typography>
                 </Typography>
               </Container>
@@ -79,7 +78,7 @@ export const Ourteam = () => {
           <Button
             className="talktoexpert_button"
             text={
-              <Typography className="talktoexpert_text">
+              <Typography variant="h2" className="talktoexpert_text">
                 Talk to Expert
               </Typography>
             }

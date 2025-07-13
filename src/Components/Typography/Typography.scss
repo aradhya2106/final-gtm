@@ -6,6 +6,7 @@
       font-size: 79px;
       font-weight: 400;
      line-height: 81px;
+      font-family: "Sora", sans-serif;
      
       
     }
@@ -13,7 +14,8 @@
     &.h2 {
       font-size: 18px;
       font-weight: 400;
-      line-height: 28px;
+      // line-height: 28px;
+       font-family: "Inter", sans-serif; ;
     }
   
     &.h3 {
@@ -26,17 +28,19 @@
       font-size: 48px;
       font-weight: 400;
       line-height: 60px;
+       font-family: "Sora", sans-serif;
     }
     &.h5 {
       font-size: 50px;
       font-weight: 400;
       line-height: 60px;
+       font-family: "Sora", sans-serif;
     }
     &.h6{
       font-size: 16px;
       font-weight: 400;
       // line-height: 25.2px;
-      font-family: inter;
+      
     }
     &.h7{
       font-size: 20px;
@@ -54,7 +58,7 @@
         font-size: 48px;
         font-weight: 400;
         line-height: 47px;
-        font-family: Sora;;
+           font-family: "Sora", sans-serif;
     
     }
     &.h10{  
@@ -91,7 +95,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  font-family: Sora;
+  // font-family: Sora;
 }
 // &.h14{  
 //   font-size: 18px;
@@ -235,4 +239,5 @@ padding-left: 1.7rem;
     box-shadow: 0 0 2px #d6cfe7, 0 0 5px #2e1a47;
   }
 }
+
 

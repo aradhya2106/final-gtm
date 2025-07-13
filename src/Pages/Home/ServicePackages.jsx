@@ -10,7 +10,7 @@ export const ServicePackages = () => {
       <div className="servicepackage">
         <div className="servicepackage-container">
           <div>
-            <Typography variant="h1" className="servicepackage_text">
+            <Typography variant="h17" className="servicepackage_text">
               {`SERVICE PACKAGES`.split("").map((char, idx) => (
                 <span key={idx} className="char">
                   {char === " " ? "\u00A0" : char}
@@ -19,11 +19,11 @@ export const ServicePackages = () => {
             </Typography>
           </div>
           <div className="sub_itle_container">
-            <Typography variant="h5" className="subtitle_text">
+            <Typography variant="h9" className="subtitle_text">
               Choose a Plan That Fits
-              <Typography variant="h5" className="your_text">
+              <Typography variant="h9" className="your_text">
                 Your
-                <Typography variant="h5" className="Structure_text">
+                <Typography variant="h9" className="Structure_text">
                   Growth Stage
                 </Typography>
               </Typography>
@@ -56,7 +56,7 @@ export const ServicePackages = () => {
                   <Button
                     className="get_container"
                     text={
-                      <Typography className="text_button" variant="h3">
+                      <Typography className="text_button" variant="h2">
                         Get Started
                       </Typography>
                     }
@@ -88,7 +88,7 @@ export const ServicePackages = () => {
                   <Button
                     className="get_container"
                     text={
-                      <Typography className="text_button" variant="h3">
+                      <Typography className="text_button" variant="h2">
                         Get Started
                       </Typography>
                     }
@@ -120,7 +120,7 @@ export const ServicePackages = () => {
                   <Button
                     className="get_container"
                     text={
-                      <Typography className="text_button" variant="h3">
+                      <Typography className="text_button" variant="h2">
                         Get Start
                       </Typography>
                     }

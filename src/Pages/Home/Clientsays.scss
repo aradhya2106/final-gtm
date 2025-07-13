@@ -1,36 +1,73 @@
-.clientsay_conatiner{
-    padding:78px;
-    
+.clientsay_conatiner {
+  padding: 78px;
 
+  @media (max-width: 1024px) {
+    padding: 60px 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 10px;
+  }
 }
-.clientall_text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.clientall_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.client_say_all_container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+
+  @media (max-width: 768px) {
     flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
 
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
 }
-.whatour_text{
-    color: white;
 
-   
+.Rodriguez_container,
+.Mari_Garcia_container {
+  background-color: #0e0e0e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  max-width: 400px;
+  width: 100%;
+  min-height: 200px;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+    min-height: auto;
+  }
 }
-.Clientsay_text {
-    background: linear-gradient(to right, #30A0FF, #B145FF);
+.Clientsay_text{ 
+  
+      background: linear-gradient(to right, #B145FF, #30A0FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .subtitle_client_text{
-   padding-top:14px ;
-    
-  }
-  .Techc_corp_text{
-    padding-bottom: 16.6px;
-  }
-
-  .Gtm_lab_Text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+}

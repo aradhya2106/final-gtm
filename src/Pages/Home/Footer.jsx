@@ -24,7 +24,7 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer_column">
+        {/* <div className="footer_column">
           <Typography className="footer_heading">Help</Typography>
           <ul>
             <li>
@@ -40,7 +40,7 @@ export const Footer = () => {
               <Typography>Forum</Typography>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="footer_column">
           <Typography className="footer_heading">Social Media</Typography>
           <ul>

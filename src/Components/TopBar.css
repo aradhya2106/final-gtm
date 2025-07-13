@@ -1,11 +1,15 @@
 /* Base styling */
 .topbar {
   background-color: #13142d;
+  border-radius: 20px;
+ 
 }
 
 .topbar_container {
   background-color: #13142d;
   padding: 1rem 2rem;
+  border-radius: 20px;
+
 }
 
 .topbar_content {
@@ -13,28 +17,100 @@
   grid-template-columns: 1fr 2fr 1.5fr;
   align-items: center;
   gap: 20px;
+
 }
 
+/* .nav_links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+ 
+} */
+
+/* .nav_links > div,
+.nav_links > a {
+  position: relative;
+  padding: 8px 14px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.4s ease, color 0.3s ease;
+
+  &:hover,
+  &:active {
+    background: linear-gradient(to right, #30A0FF, #B145FF);
+    color: white;
+  }
+} */
 .nav_links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+
+  div, a {
+    font-weight: 500;
+    position: relative;
+    background: linear-gradient(to right, #ffffff, #ffffff); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: white;
+    transition: background 0.5s ease;
+
+    &:hover {
+      background: linear-gradient(to right, #B145FF, #30A0FF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
+
+ 
 
 .social_section {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
+
 }
 
 .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
 }
 
+/* .button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(to right, #B145FF, #30A0FF);
+  padding: 8px 20px;
+
+
+} */
+/* .button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(to right, #B145FF, #30A0FF);
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+
+  &:hover,
+  &:active {
+    background: linear-gradient(to right, #30A0FF, #B145FF);
+  }
+} */
 .button_container {
   display: flex;
   justify-content: center;
@@ -42,7 +118,23 @@
   border-radius: 20px;
   background: linear-gradient(to right, #B145FF, #30A0FF);
   padding: 8px 20px;
+  cursor: pointer;
+  background-size: 200% auto;
+  transition: background-position 0.4s ease;
+
+  &:hover,
+  &:active {
+    background-position: right center; 
+    background: linear-gradient(to right, #30A0FF, #B145FF);
+  }
+
 }
+
+.button_text {
+  color: white;
+  font-weight: 500;
+}
+
 
 .button_text {
   color: white;
@@ -137,4 +229,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+}
+.page_wrapper{
+  border-radius: 20px;
 }

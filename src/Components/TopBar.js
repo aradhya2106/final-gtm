@@ -8,6 +8,7 @@ import { Typography } from "../../src/Components/Typography/Typography";
 import Linkedin from "../Assets/Linkedinnew.png";
 const TopBar = () => {
   return (
+    <div className="page_wrapper">
     <div className='header'>
     <div className='topbar'>
     <div className='topbar_container'>
@@ -28,7 +29,7 @@ const TopBar = () => {
           <img className='social_icon' src={Xnew} alt='X' />
           <img  className='linkedin' src={Linkedin} alt='Linkedin'/>
           <div className='button'>
-            <Button className='button_container' text={<Typography className='button_text' variant="h3">Get Start</Typography>}/>
+            <Button className='button_container' text={<Typography className='button_text' variant="h2">Get Start</Typography>}/>
           </div>
 
         </div>
@@ -36,11 +37,12 @@ const TopBar = () => {
     </div>
     </div>
     <div className='topbar_bottom'>
-     <div className='Strategy_text'> Strategy</div>
+     <div className='Strategy_text'> <Typography variant='h4'>Strategy</Typography> </div>
      <img src={Ellipse} alt='Ellipse' className='ellipse2' />
-     <div className='Execution_text'>Execution</div>
+     <div className='Execution_text'> <Typography variant='h4'>Execution</Typography></div>
      <img src={Ellipse} alt='Ellipse' className='ellipse2' />
-     <div className='Result_text'> Results</div>
+     <div className='Result_text'> <Typography variant='h4'>Results</Typography>  </div>
+    </div>
     </div>
     </div>
   );

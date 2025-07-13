@@ -5,12 +5,13 @@ import gradientAboutUs from "../../Assets/gradientAboutUs.png";
 import aboutUs from "../../Assets/about_us.png";
 import { Button } from "../../Components/Button/Button";
 import { button } from "framer-motion/client";
+import colabimage from "../../Assets/colabimage.png"
 export const AboutUs = () => {
   return (
     <div className="aboutus">
       <div className="aboutus-container">
         <div>
-          <Typography variant="h1" className="our1_text">
+          <Typography variant="h17" className="our1_text">
             {`WHO WE ARE?`.split("").map((char, idx) => (
               <span key={idx} className="char">
                 {char === " " ? "\u00A0" : char}
@@ -33,19 +34,19 @@ export const AboutUs = () => {
         </Typography>
 
         <div>
-          <Typography variant="h2" className="text2_container">
+          <Typography variant="h18" className="text2_container">
             Your Full-Stack GTM Partner for Web3, AI, and Emerging Tech
           </Typography>
         </div>
         <div>
-          <Typography variant="h6" className="text3_container">
+          <Typography variant="h19" className="text3_container">
             GTM Labs is a full-stack growth and marketing agency helping
             Web3,AI, and Tech
             {/* <br /> */}
-            <Typography>
+            <Typography variant="h19">
               start-ups scale efficiently. From go-to-market strategy to
               post-funding execution,
-            </Typography>
+            </Typography >
             {/* <br /> */}
             we serve as a committedpartner to help start-ups accelerate with
             clarity and confidence.
@@ -64,12 +65,15 @@ export const AboutUs = () => {
       </div>
 
       <div className="aboutus-image">
-        <img src={aboutUs} alt="About Us" className="img_about" />
-        <img
+        
+        <img src={colabimage} alt="colabimg" className="img_about" />
+        
+        {/* <img
           src={gradientAboutUs}
           alt="gradientAboutUs"
           className="gardientClass"
-        />
+          
+        /> */}
       </div>
     </div>
   );
