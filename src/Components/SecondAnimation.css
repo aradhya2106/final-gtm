@@ -1,0 +1,110 @@
+/* Main container */
+.second-container {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    color: white;
+    box-sizing: border-box;
+    gap: 40px;
+  }
+  
+  /* Left-side text */
+  .second-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .second-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #a855f7;
+    margin-bottom: 20px;
+  }
+  
+  .second-text p {
+    font-size: 1.2rem;
+    color: #d1d5db;
+    max-width: 500px;
+    line-height: 1.6;
+  }
+  
+  /* Right-side cube */
+  .cube-wrapper {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+  }
+  
+  /* Spinning cube core */
+  .spinning-cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease-in-out;
+    cursor: grab;
+  }
+  
+  /* Each face of the cube */
+  .spinning-cube .face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    color: white;
+    border: 2px solid #9333ea;
+    background: linear-gradient(145deg, #a855f7, #6366f1);
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.3);
+    text-transform: uppercase;
+  }
+  
+  /* Position faces */
+  .front  { transform: rotateY(0deg) translateZ(100px); }
+  .back   { transform: rotateY(180deg) translateZ(100px); }
+  .left   { transform: rotateY(-90deg) translateZ(100px); }
+  .right  { transform: rotateY(90deg) translateZ(100px); }
+  .top    { transform: rotateX(90deg) translateZ(100px); }
+  .bottom { transform: rotateX(-90deg) translateZ(100px); }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .second-container {
+      flex-direction: column;
+      padding: 40px 24px;
+      text-align: center;
+    }
+  
+    .second-text h2 {
+      font-size: 2.2rem;
+    }
+  
+    .second-text p {
+      font-size: 1.1rem;
+    }
+  
+    .spinning-cube {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .spinning-cube .face {
+      width: 150px;
+      height: 150px;
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,87 @@
+
+
+.container_smartsolution{
+  // padding: 136px;
+
+
+}
+
+.smartsolution_container{
+  padding-top: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.smartsolution_subtitle_text {
+  color: white;
+ 
+}  
+.Smartsolution_text {
+  background: linear-gradient(to right, #30A0FF, #B145FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.smartsolution_description_text{
+  padding-top: 19px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.year_container{
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 257.6px;
+  height: 193px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+
+}
+.year_text{
+   color:  #0D99FF ;
+   padding-bottom: 4.5px;
+ 
+}
+.subtitle{
+  color: white;
+  padding-bottom: 55.5px ;
+}
+.smartsolutionall_container{
+  padding-top:60px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:20px ;
+  
+
+}
+.industries_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.talk_button{
+padding-top: 54px;
+}
+.talktoexpert_button {
+  
+  border-radius: 30px;
+  width: 230px;
+  height: 50px;
+  background: linear-gradient(to right, #30A0FF, #B145FF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.talktoexpert_text{
+  color:black;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 600;
+}
