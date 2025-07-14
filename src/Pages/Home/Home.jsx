@@ -8,9 +8,9 @@ import { ServicePackages } from "./ServicePackages";
 import { Ourteam} from "./Ourteam";
 import {Clientsays} from "./Clientsays"
 import {Footer} from  "./Footer"
-import "./home.scss"; 
+import "./home.scss";
 import {Getintouch} from  "./Getintouch"
-// import { Ourpartners } from "./Ourpartners";  
+// import { Ourpartners } from "./Ourpartners";
 export const Home = () => {
     return (
       <div className="home-container">
@@ -20,10 +20,9 @@ export const Home = () => {
         <AboutUs />
         <Service />
         <ServicePackages />
-        <Ourteam />
-        <Clientsays/>
-        <Getintouch/>
-        <Footer/>
+        <Clientsays />
+        <Getintouch />
+        <Footer />
       </div>
     );
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import "./HeroBanner.scss";
-import { Typography } from "../../Components/Typography/Typography";
 import { Button } from "../../Components/Button/Button";
+import { Typography } from "../../Components/Typography/Typography";
+import "./HeroBanner.scss";
 
 export const HeroBanner = () => {
   return (
@@ -11,13 +11,29 @@ export const HeroBanner = () => {
       <div className="gradient_circle_right" />
 
       <div className="hero_banner_container">
+        {/* Strategy Section */}
+        <div className="strategy_section">
+          <Typography variant="h3" className="strategy_text">
+            STRATEGY
+          </Typography>
+          <span className="strategy_dot">•</span>
+          <Typography variant="h3" className="strategy_text">
+            EXECUTION
+          </Typography>
+          <span className="strategy_dot">•</span>
+          <Typography variant="h3" className="strategy_text">
+            RESULTS
+          </Typography>
+        </div>
+
         {/* Main Heading */}
-        <Typography variant="h5" className="web_text">
-          Web3. AI. <div className="Grow_text">Growth. Delivered.</div>
+        <Typography variant="h1" className="web_text">
+          Web3. AI. <span className="growth_text">Growth.</span>{" "}
+          <span className="delivered_text">Delivered.</span>
         </Typography>
 
         {/* Sub Heading */}
-        <Typography variant="h5" className="hero_banner_text">
+        <Typography variant="h14" className="hero_banner_text">
           We help future forward Start-ups build Traction, Community, and
           Revenue
           <br />
@@ -29,7 +45,7 @@ export const HeroBanner = () => {
           <Button
             className="start_button"
             text={
-              <Typography variant="h16" className="Start_text">
+              <Typography variant="h2" className="start_text">
                 Start Scaling
               </Typography>
             }
@@ -38,7 +54,7 @@ export const HeroBanner = () => {
           <Button
             className="work_button"
             text={
-              <Typography variant="h2" className="MuiTypography-root">
+              <Typography variant="h2" className="work_text">
                 How It Works
               </Typography>
             }
