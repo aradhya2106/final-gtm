@@ -57,56 +57,64 @@ export const About = () => {
       {/* Cards Grid */}
       <div className="advantages_grid">
         <div className="advantage_card">
-          <div className="card_icon">
-            <img src={Freampeople} alt="Web3 & AI Native Team" />
+          <div className="card_content">
+            <div className="card_icon">
+              <img src={Freampeople} alt="Web3 & AI Native Team" />
+            </div>
+            <Typography variant="h15" className="card_title">
+              Web3 & AI Native Team
+            </Typography>
+            <Typography variant="caption" className="card_description">
+              Built for Web3. We speak the language of DeFi, DAOs, and AI creating
+              strategies made for crypto-native audiences, not Web2 templates.
+            </Typography>
           </div>
-          <Typography variant="h15" className="card_title">
-            Web3 & AI Native Team
-          </Typography>
-          <Typography variant="caption" className="card_description">
-            Built for Web3. We speak the language of DeFi, DAOs, and AI creating
-            strategies made for crypto-native audiences, not Web2 templates.
-          </Typography>
         </div>
 
         <div className="advantage_card">
-          <div className="card_icon">
-            <img src={circular} alt="Outcome-Driven Approach" />
+          <div className="card_content">
+            <div className="card_icon">
+              <img src={circular} alt="Outcome-Driven Approach" />
+            </div>
+            <Typography variant="h15" className="card_title">
+              Outcome-Driven Approach
+            </Typography>
+            <Typography variant="caption" className="card_description">
+              We build campaigns that drive real business results from user growth
+              to fundraising with ROI at the core of everything we do.
+            </Typography>
           </div>
-          <Typography variant="h15" className="card_title">
-            Outcome-Driven Approach
-          </Typography>
-          <Typography variant="caption" className="card_description">
-            We build campaigns that drive real business results from user growth
-            to fundraising with ROI at the core of everything we do.
-          </Typography>
         </div>
 
         <div className="advantage_card">
-          <div className="card_icon">
-            <img src={rocket} alt="Fundraising & Launchpad Support" />
+          <div className="card_content">
+            <div className="card_icon">
+              <img src={rocket} alt="Fundraising & Launchpad Support" />
+            </div>
+            <Typography variant="h15" className="card_title">
+              Fundraising & Launchpad Support
+            </Typography>
+            <Typography variant="caption" className="card_description">
+              We support your raise with sharp GTM strategy, decks, and warm
+              intros then help you launch seamlessly across Tier 1–3 platforms
+              with full listing, liquidity, and compliance support.
+            </Typography>
           </div>
-          <Typography variant="h15" className="card_title">
-            Fundraising & Launchpad Support
-          </Typography>
-          <Typography variant="caption" className="card_description">
-            We support your raise with sharp GTM strategy, decks, and warm
-            intros then help you launch seamlessly across Tier 1–3 platforms
-            with full listing, liquidity, and compliance support.
-          </Typography>
         </div>
 
         <div className="advantage_card">
-          <div className="card_icon">
-            <img src={internet} alt="Global Network Access" />
+          <div className="card_content">
+            <div className="card_icon">
+              <img src={internet} alt="Global Network Access" />
+            </div>
+            <Typography variant="h15" className="card_title">
+              Global Network Access
+            </Typography>
+            <Typography variant="caption" className="card_description">
+              We launch globally, activate locally. With on-ground partners and
+              cultural fluency, we scale campaigns that truly resonate.
+            </Typography>
           </div>
-          <Typography variant="h15" className="card_title">
-            Global Network Access
-          </Typography>
-          <Typography variant="caption" className="card_description">
-            We launch globally, activate locally. With on-ground partners and
-            cultural fluency, we scale campaigns that truly resonate.
-          </Typography>
         </div>
       </div>
 

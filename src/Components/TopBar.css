@@ -377,6 +377,53 @@
   }
 }
 
+/* Tablet Landscape Fix - Specific range for medium tablets */
+@media screen and (max-width: 950px) and (min-width: 769px) {
+  .header {
+    padding: 1rem 1.2rem;
+  }
+
+  .topbar_container {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .topbar_content {
+    grid-template-columns: 1fr 2fr auto;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .nav_links {
+    flex-wrap: nowrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .nav_links div {
+    font-size: 11px;
+    padding: 8px 0;
+    white-space: nowrap;
+  }
+
+  .social_section {
+    gap: 15px;
+  }
+
+  .button_container {
+    min-width: 120px;
+    padding: 10px 20px;
+    height: 40px;
+  }
+
+  .button_text {
+    font-size: 12px;
+  }
+
+  .logo img {
+    height: 32px;
+  }
+}
+
 /* Mobile view */
 @media screen and (max-width: 768px) {
   .header {

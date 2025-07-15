@@ -112,8 +112,8 @@
   min-height: 0px; // Much larger minimum height
 
   .service_card_icon {
-    width: 200px !important; // Much larger icons
-    height: 200px !important;
+    width: 100px !important; // Much larger icons
+    height: 400px !important;
     object-fit: contain;
     filter: drop-shadow(0 8px 25px rgba(177, 69, 255, 0.5));
     transition: all 0.3s ease;

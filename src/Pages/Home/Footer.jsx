@@ -1,6 +1,10 @@
 import React from "react";
 import { Typography } from "../../Components/Typography/Typography";
 import send from "../../Assets/Send.png";
+import gtmlogonew from "../../Assets/gtmlogonew.png";
+import Callicon from "../../Assets/Callicon.png";
+import Emailicon from "../../Assets/Emailicon.png";
+import Locationicon from "../../Assets/Locationicon.png";
 import "./Footer.scss";
 
 export const Footer = () => {
@@ -45,7 +49,99 @@ export const Footer = () => {
 
   return (
     <div className="footer_container">
-      <div className="footer_links_section">
+      {/* Mobile-first layout */}
+      <div className="mobile_footer_layout">
+        {/* Contact Information Section - Mobile First */}
+        <div className="footer_column contact_column_mobile">
+          <Typography className="footer_heading" weight="bold">Contact Information</Typography>
+          <div className="contact_info">
+            <div className="contact_item">
+              <img src={Emailicon} alt="Email" className="contact_icon" />
+              <Typography variant="body" className="contact_text">
+                contact@gtmlabs.xyz
+              </Typography>
+            </div>
+
+            <div className="contact_item">
+              <img src={Callicon} alt="Phone" className="contact_icon" />
+              <Typography variant="body" className="contact_text">
+                +91 7011844199
+              </Typography>
+            </div>
+
+            <div className="contact_item">
+              <img src={Locationicon} alt="Location" className="contact_icon" />
+              <Typography variant="body" className="contact_text">
+                Gurugram, Delhi NCR
+              </Typography>
+            </div>
+          </div>
+          
+          {/* Logo below contact info on mobile */}
+          <div className="logo_section_mobile">
+            <img src={gtmlogonew} alt="GTM Labs" className="footer_logo" />
+          </div>
+        </div>
+
+        {/* Quick Links and Policies side by side on mobile */}
+        <div className="footer_links_section_mobile">
+          <div className="footer_column">
+            <Typography className="footer_heading" weight="bold">Quick Links</Typography>
+            <ul>
+              <li>
+                <Typography>Home</Typography>
+              </li>
+              <li>
+                <Typography>About</Typography>
+              </li>
+              <li>
+                <Typography>Services</Typography>
+              </li>
+            </ul>
+          </div>
+          
+          <div className="footer_column">
+            <Typography className="footer_heading" weight="bold">Policies</Typography>
+            <ul>
+              <li>
+                <Typography>Privacy Policy</Typography>
+              </li>
+              <li>
+                <Typography>Terms & Conditions</Typography>
+              </li>
+              <li>
+                <Typography>Disclaimer</Typography>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Social Media Section - Mobile */}
+        <div className="footer_column social_column_mobile">
+          <Typography className="footer_heading">Social Media</Typography>
+          <div className="social_media_icons">
+            {socialMediaLinks.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social_icon"
+                aria-label={`Visit our ${social.name} page`}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop layout */}
+      <div className="footer_main_content">
+        <div className="footer_column logo_column">
+          <img src={gtmlogonew} alt="GTM Labs" className="footer_logo" />
+        </div>
+
         <div className="footer_column">
           <Typography className="footer_heading" weight="bold">Quick Links</Typography>
           <ul>
@@ -60,7 +156,33 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-        
+
+        <div className="footer_column">
+          <Typography className="footer_heading" weight="bold">Contact Information</Typography>
+          <div className="contact_info">
+            <div className="contact_item">
+              <img src={Emailicon} alt="Email" className="contact_icon" />
+              <Typography variant="body" className="contact_text">
+                contact@gtmlabs.xyz
+              </Typography>
+            </div>
+
+            <div className="contact_item">
+              <img src={Callicon} alt="Phone" className="contact_icon" />
+              <Typography variant="body" className="contact_text">
+                +91 7011844199
+              </Typography>
+            </div>
+
+            <div className="contact_item">
+              <img src={Locationicon} alt="Location" className="contact_icon" />
+              <Typography variant="body" className="contact_text">
+                Gurugram, Delhi NCR
+              </Typography>
+            </div>
+          </div>
+        </div>
+      
         <div className="footer_column">
           <Typography className="footer_heading" weight="bold">Policies</Typography>
           <ul>
@@ -75,39 +197,25 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
 
-      <div className="footer_column">
-        <Typography className="footer_heading">Social Media</Typography>
-        <div className="social_media_icons">
-          {socialMediaLinks.map((social, index) => (
-            <a
-              key={index}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social_icon"
-              aria-label={`Visit our ${social.name} page`}
-            >
-              {social.icon}
-            </a>
-          ))}
+        <div className="footer_column">
+          <Typography className="footer_heading">Social Media</Typography>
+          <div className="social_media_icons">
+            {socialMediaLinks.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social_icon"
+                aria-label={`Visit our ${social.name} page`}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-
-      {/* 
-      <div className="footer_newsletter">
-        <Typography className="footer_heading">
-          Join our mailing list for updates
-        </Typography>
-        <div className="newsletter_input">
-          <input type="email" placeholder="Your email address" />
-          <button>
-            <img src={send} alt="Send" />
-          </button>
-        </div>
-      </div>
-      */}
       
       <div className="footer_copyright">
         <Typography>GTM Labs © 2025. All rights reserved</Typography>
