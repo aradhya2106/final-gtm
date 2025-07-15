@@ -40,9 +40,39 @@
 }
 
 .footer_heading {
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
+}
+
+.social_media_icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .footer_newsletter {
@@ -128,5 +158,19 @@
   .newsletter_input button img {
     width: 16px;
     height: 16px;
+  }
+  
+  .social_media_icons {
+    gap: 0.75rem;
+  }
+  
+  .social_icon {
+    width: 36px;
+    height: 36px;
+    
+    svg {
+      width: 18px;
+      height: 18px;
+    }
   }
 }

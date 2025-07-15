@@ -107,18 +107,37 @@
   gap: 25px;
 }
 
-.social_icon,
+.social_section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.social_section a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.x_logo {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.x_logo:hover {
+  transform: scale(1.1);
+}
+
 .linkedin {
   height: 22px;
   width: 22px;
   cursor: pointer;
   transition: all 0.3s ease;
-  opacity: 0.8;
 }
 
-.social_icon:hover,
 .linkedin:hover {
-  opacity: 1;
   transform: scale(1.1);
 }
 
@@ -247,6 +266,20 @@
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+.mobile_social_section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.mobile_social_section a:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .mobile_cta_button {

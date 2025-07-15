@@ -3,7 +3,6 @@ import { Button } from "../../src/Components/Button/Button";
 import { Typography } from "../../src/Components/Typography/Typography";
 import gtmlogonew from "../Assets/gtmlogonew.png";
 import Linkedin from "../Assets/Linkedinnew.png";
-import Xnew from "../Assets/Xnew.png";
 import "./TopBar.css";
 
 const TopBar = () => {
@@ -58,6 +57,19 @@ const TopBar = () => {
     };
   }, []);
 
+  // X Logo SVG Component
+  const XLogo = () => (
+    <svg 
+      width="22" 
+      height="22" 
+      viewBox="0 0 24 24" 
+      fill="white" 
+      className="x_logo"
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+    </svg>
+  );
+
   return (
     <div className="page_wrapper">
       <div className="header">
@@ -89,8 +101,12 @@ const TopBar = () => {
 
               {/* Desktop Social Section */}
               <div className="social_section desktop_social">
-                <img className="social_icon" src={Xnew} alt="X" />
-                <img className="linkedin" src={Linkedin} alt="Linkedin" />
+                <a href="https://x.com/gtmlabsxyz" target="_blank" rel="noopener noreferrer">
+                  <XLogo />
+                </a>
+                <a href="https://www.linkedin.com/company/gtmlabspage/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+                  <img className="linkedin" src={Linkedin} alt="Linkedin" />
+                </a>
                 <div className="button">
                   <Button
                     className="button_container"
@@ -140,8 +156,12 @@ const TopBar = () => {
               </div>
 
               <div className="mobile_social_section">
-                <img className="social_icon" src={Xnew} alt="X" />
-                <img className="linkedin" src={Linkedin} alt="Linkedin" />
+                <a href="https://x.com/gtmlabsxyz" target="_blank" rel="noopener noreferrer">
+                  <XLogo />
+                </a>
+                <a href="https://www.linkedin.com/company/gtmlabspage/posts/?feedView=all" target="_blank" rel="noopener noreferrer">
+                  <img className="linkedin" src={Linkedin} alt="Linkedin" />
+                </a>
               </div>
 
               <div className="mobile_cta_button">
