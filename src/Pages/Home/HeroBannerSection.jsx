@@ -4,6 +4,17 @@ import { Typography } from "../../Components/Typography/Typography";
 import "./HeroBanner.scss";
 
 export const HeroBanner = () => {
+  const handleStartScaling = () => {
+    window.open("https://calendly.com/gtmlabsxyz/consult", "_blank");
+  };
+
+  const handleScrollToServices = () => {
+    const element = document.getElementById("services");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="hero_banner">
       {/* Gradient background circles */}
@@ -44,6 +55,7 @@ export const HeroBanner = () => {
         <div className="hero_banner_button">
           <Button
             className="start_button"
+            onClick={handleStartScaling}
             text={
               <Typography variant="h2" className="start_text">
                 Start Scaling
@@ -53,9 +65,10 @@ export const HeroBanner = () => {
 
           <Button
             className="work_button"
+            onClick={handleScrollToServices}
             text={
               <Typography variant="h2" className="work_text">
-                How It Works
+                Our Services
               </Typography>
             }
           />

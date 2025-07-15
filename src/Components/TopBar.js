@@ -72,6 +72,9 @@ const TopBar = () => {
 
   return (
     <div className="page_wrapper">
+      {/* Background Blur Overlay */}
+      <div className={`mobile_menu_backdrop ${isMobileMenuOpen ? "open" : ""}`} />
+      
       <div className="header">
         <div className="topbar">
           <div className="topbar_container">

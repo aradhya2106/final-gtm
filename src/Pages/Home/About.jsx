@@ -7,16 +7,37 @@ import { Typography } from "../../Components/Typography/Typography";
 import "./About.scss";
 
 export const About = () => {
+  const handleTurnStrategyIntoAction = () => {
+    window.open("https://calendly.com/gtmlabsxyz/consult", "_blank");
+  };
+
+  const renderTitle = () => {
+    return (
+      <div className="advantages_title_wrapper">
+        <div className="advantages_title_line">
+          {"OUR".split("").map((char, idx) => (
+            <span key={idx} className="char">
+              {char === " " ? "\u00A0" : char}
+            </span>
+          ))}
+        </div>
+        <div className="advantages_title_line">
+          {"ADVANTAGES".split("").map((char, idx) => (
+            <span key={idx} className="char">
+              {char === " " ? "\u00A0" : char}
+            </span>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="about_section">
       {/* Header Section */}
       <div className="about_header">
         <Typography variant="h3" className="advantages_title">
-          {"OUR ADVANTAGES".split("").map((char, idx) => (
-            <span key={idx} className="char">
-              {char === " " ? "\u00A0" : char}
-            </span>
-          ))}
+          {renderTitle()}
         </Typography>
 
         <div className="main_title">
@@ -93,6 +114,7 @@ export const About = () => {
       <div className="about_cta">
         <Button
           className="strategy_button"
+          onClick={handleTurnStrategyIntoAction}
           text={
             <Typography variant="h2" className="cta_text">
               Turn Strategy Into Action

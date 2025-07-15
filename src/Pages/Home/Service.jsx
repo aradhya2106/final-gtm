@@ -9,7 +9,7 @@ import growthIcon from "../../Assets/Growth.png";
 import marketingIcon from "../../Assets/marketing.png";
 
 export const Service = () => (
-  <div className="service_section">
+  <div className="service_section" id="services">
     <Typography variant="h17" className="service_title">
       {"SERVICES".split("").map((char, idx) => (
         <span key={idx} className="char">

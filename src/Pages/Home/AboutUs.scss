@@ -7,7 +7,7 @@
   font-family: 'Sora', sans-serif;
 
   @media (max-width: 768px) {
-    padding: 3rem 1rem;
+    padding: 5rem 1rem;
   }
 }
 
@@ -17,18 +17,35 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  text-align: left;
+  text-align: center;
   z-index: 1;
   pointer-events: none;
-  margin-left: 200px;
+
+  @media (min-width: 769px) {
+    text-align: left;
+    margin-left: 200px;
+  }
 
   .who_we_are_bg {
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 800;
     color: transparent;
     letter-spacing: 0.5rem;
-    word-break: break-word;
     margin-bottom: 2rem;
+    
+    @media (max-width: 768px) {
+      word-break: break-word;
+      line-height: 1.1;
+      /* Force line break after "WHO" on mobile */
+      &::after {
+        content: "";
+        display: block;
+      }
+    }
+    
+    @media (min-width: 769px) {
+      word-break: break-word;
+    }
   }
 }
 
@@ -53,7 +70,7 @@
   z-index: 2;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 15rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -62,7 +79,7 @@
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
 }
 
@@ -156,5 +173,3 @@
     }
   }
 }
-
-

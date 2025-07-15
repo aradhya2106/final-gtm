@@ -4,14 +4,28 @@ import { Typography } from "../../Components/Typography/Typography";
 import "./ServicePackages.scss";
 
 export const ServicePackages = () => {
+  const handleScheduleCall = () => {
+    window.open("https://calendly.com/gtmlabsxyz/consult", "_blank");
+  };
+
+  const handleTalkToExpert = () => {
+    window.open("https://calendly.com/gtmlabsxyz/consult", "_blank");
+  };
+
   return (
     <div className="servicepackage_section">
       {/* Title Section */}
       <div className="servicepackage_header">
         <Typography variant="h17" className="servicepackage_title">
-          {"SERVICE PACKAGES".split("").map((char, idx) => (
+          {"SERVICE".split("").map((char, idx) => (
             <span key={idx} className="char">
-              {char === " " ? "\u00A0" : char}
+              {char}
+            </span>
+          ))}
+          <span className="mobile_break"></span>
+          {"PACKAGES".split("").map((char, idx) => (
+            <span key={idx + 7} className="char">
+              {char}
             </span>
           ))}
         </Typography>
@@ -58,7 +72,7 @@ export const ServicePackages = () => {
               </Typography>
             </div>
           </div>
-          <Button className="schedule_button">
+          <Button className="schedule_button" onClick={handleScheduleCall}>
             <span className="button_text">Schedule a call</span>
           </Button>
         </div>
@@ -98,7 +112,7 @@ export const ServicePackages = () => {
               </Typography>
             </div>
           </div>
-          <Button className="schedule_button">
+          <Button className="schedule_button" onClick={handleScheduleCall}>
             <span className="button_text">Schedule a call</span>
           </Button>
         </div>
@@ -133,7 +147,7 @@ export const ServicePackages = () => {
               </Typography>
             </div>
           </div>
-          <Button className="schedule_button">
+          <Button className="schedule_button" onClick={handleScheduleCall}>
             <span className="button_text">Schedule a call</span>
           </Button>
         </div>
@@ -196,7 +210,7 @@ export const ServicePackages = () => {
 
         {/* CTA Button */}
         <div className="cta_section">
-          <Button className="talk_expert_button">
+          <Button className="talk_expert_button" onClick={handleTalkToExpert}>
             <span className="expert_button_text">Talk to Expert</span>
           </Button>
         </div>

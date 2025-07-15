@@ -5,16 +5,48 @@ import { Typography } from "../../Components/Typography/Typography";
 import "./AboutUs.scss";
 
 export const AboutUs = () => {
+  const handleGetToKnowUs = () => {
+    window.open("https://linktr.ee/gtmlabsxyz", "_blank");
+  };
+
+  const renderBackgroundText = () => {
+    const text = "WHO WE ARE?";
+    const isMobile = window.innerWidth <= 768;
+    
+    if (isMobile) {
+      return (
+        <>
+          <div className="line">
+            {"WHO".split("").map((char, idx) => (
+              <span key={idx} className="char">
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
+          </div>
+          <div className="line">
+            {"WE ARE?".split("").map((char, idx) => (
+              <span key={idx + 3} className="char">
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
+          </div>
+        </>
+      );
+    } else {
+      return text.split("").map((char, idx) => (
+        <span key={idx} className="char">
+          {char === " " ? "\u00A0" : char}
+        </span>
+      ));
+    }
+  };
+
   return (
     <div className="aboutus_section">
       {/* Background Text */}
       <div className="background_text">
         <Typography variant="h3" className="who_we_are_bg">
-          {"WHO WE ARE?".split("").map((char, idx) => (
-            <span key={idx} className="char">
-              {char === " " ? "\u00A0" : char}
-            </span>
-          ))}
+          {renderBackgroundText()}
         </Typography>
       </div>
 
@@ -46,6 +78,7 @@ export const AboutUs = () => {
           <div className="cta_button">
             <Button
               className="know_us_button"
+              onClick={handleGetToKnowUs}
               text={
                 <Typography variant="h2" className="button_text">
                   Get to Know Us

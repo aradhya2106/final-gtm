@@ -53,36 +53,49 @@ export const Footer = () => {
               <Typography>Home</Typography>
             </li>
             <li>
-              <Typography>Features</Typography>
+              <Typography>About</Typography>
             </li>
             <li>
-              <Typography>Community</Typography>
-            </li>
-            <li>
-              <Typography>Support</Typography>
+              <Typography>Services</Typography>
             </li>
           </ul>
         </div>
         
         <div className="footer_column">
-          <Typography className="footer_heading">Social Media</Typography>
-          <div className="social_media_icons">
-            {socialMediaLinks.map((social, index) => (
-              <a
-                key={index}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social_icon"
-                aria-label={`Visit our ${social.name} page`}
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
+          <Typography className="footer_heading" weight="bold">Policies</Typography>
+          <ul>
+            <li>
+              <Typography>Privacy Policy</Typography>
+            </li>
+            <li>
+              <Typography>Terms & Conditions</Typography>
+            </li>
+            <li>
+              <Typography>Disclaimer</Typography>
+            </li>
+          </ul>
         </div>
       </div>
 
+      <div className="footer_column">
+        <Typography className="footer_heading">Social Media</Typography>
+        <div className="social_media_icons">
+          {socialMediaLinks.map((social, index) => (
+            <a
+              key={index}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social_icon"
+              aria-label={`Visit our ${social.name} page`}
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* 
       <div className="footer_newsletter">
         <Typography className="footer_heading">
           Join our mailing list for updates
@@ -93,6 +106,11 @@ export const Footer = () => {
             <img src={send} alt="Send" />
           </button>
         </div>
+      </div>
+      */}
+      
+      <div className="footer_copyright">
+        <Typography>GTM Labs © 2025. All rights reserved</Typography>
       </div>
     </div>
   );

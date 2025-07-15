@@ -57,7 +57,8 @@ export const Getintouch = () => {
           </div>
         </div>
 
-        {/* Right Section - Schedule a Call */}
+        {/* Right Section - Schedule a Call - COMMENTED OUT */}
+        {/*
         <div className="schedule_section">
           <div className="schedule_card">
             <Typography variant="h6" className="schedule_title">
@@ -91,6 +92,7 @@ export const Getintouch = () => {
             </div>
           </div>
         </div>
+        */}
       </div>
     </div>
   );
